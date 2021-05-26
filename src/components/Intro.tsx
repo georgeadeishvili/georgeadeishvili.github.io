@@ -1,16 +1,5 @@
 import { useEffect, useRef } from 'react'
-import {
-	Scene,
-	TextureLoader,
-	SphereBufferGeometry,
-	MeshStandardMaterial,
-	Color,
-	Mesh,
-	WebGLRenderer,
-	PointLight,
-	PerspectiveCamera,
-	Clock
-} from 'three'
+import { Scene, TextureLoader, SphereBufferGeometry, MeshStandardMaterial, Color, Mesh, WebGLRenderer, PointLight, PerspectiveCamera, Clock } from 'three'
 import TEXTURE from '../textures/NormalMap.png'
 import { useTexture } from '@react-three/drei'
 

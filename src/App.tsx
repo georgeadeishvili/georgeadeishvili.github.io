@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro'
+import Intro from './components/Intro'
 
 const StyledHeading = styled.h1`
 	color: red;
@@ -6,11 +7,9 @@ const StyledHeading = styled.h1`
 
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<StyledHeading>Giorgi Adeishvili</StyledHeading>
-			</header>
-		</div>
+		<>
+			<Intro />
+		</>
 	)
 }
 

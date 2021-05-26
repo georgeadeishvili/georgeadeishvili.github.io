@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider, DefaultTheme, createGlobalStyle } from 'styled-components'
 import App from './App'
@@ -32,10 +32,12 @@ const GlobalStyles = createGlobalStyle`
 
 ReactDOM.render(
 	<React.StrictMode>
-		<ThemeProvider theme={theme}>
-			<App />
-			<GlobalStyles />
-		</ThemeProvider>
+		<Suspense fallback={<div />}>
+			<ThemeProvider theme={theme}>
+				<App />
+				<GlobalStyles />
+			</ThemeProvider>
+		</Suspense>
 	</React.StrictMode>,
 	document.getElementById('root'),
 )
