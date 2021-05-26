@@ -9,7 +9,8 @@ const theme: DefaultTheme = {
 	colors: {
 		primary: '#000',
 		secondary: '#fff',
-	},
+		background: '#292929'
+	}
 }
 
 const GlobalStyles = createGlobalStyle`
@@ -27,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
 		font-weight: 400;
 		line-height: 1.7;
 		color: ${({ theme }) => theme.colors.primary};
+		background-color: ${({ theme }) => theme.colors.background};
 	}
 `
 
@@ -39,7 +41,7 @@ ReactDOM.render(
 			</ThemeProvider>
 		</Suspense>
 	</React.StrictMode>,
-	document.getElementById('root'),
+	document.getElementById('root')
 )
 
 // If you want to start measuring performance in your app, pass a function
