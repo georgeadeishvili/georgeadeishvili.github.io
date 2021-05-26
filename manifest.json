@@ -1,6 +1,6 @@
 {
-  "short_name": "Adeishvili",
-  "name": "Giorgi Adeishvili",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
